@@ -1,0 +1,48 @@
+#### Data Types ####
+
+# String
+to define a string in python we will have to use double quotes or single quotes.
+for example: "Hello" is a string value
+
+We can extract one letter from a string using the below syntax:
+"Hello"[4] -> it will give 'o' as an output.
+
+# Integer
+to define an integer, we will have to type number without any characters.
+for example: 123
+
+Note: we can use underscore between integer to make it readable -> 123_456. This will be an integer with value 123456
+
+# Float (decimal)
+3.145
+
+# Boolean 
+True or False
+
+# To check the type of variable use type()
+type(1234)
+
+# To convert any variable to string we can use str()
+str(1234)
+
+# To convert any variable to float we can use float()
+float("100.45")
+
+#### Different Operations ####
+Addition - '+'
+Subtraction - '-'
+Divide - '/'
+Modulus - '%'
+Power - '**'
+Multiply - '*'
+
+Operation Priority -> PEMDAS -> '()' > '**' > '*' '/' > '-' '+'
+
+#### Data Types Manipulations ####
+round(float number, round to precision decimal places)
+
+round(2.6666, 2) -> it will round the value to 2.67 because I have provided 2 as precision decimal place
+
+// -> floor division -> it will give integer value
+
+fstring -> it will allow to concat different data types as string without converting it to string
