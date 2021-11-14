@@ -1,0 +1,26 @@
+#### Control FLow and Logical Operators ####
+
+comparison operations
+'>' -> greater than
+'<' -> less than
+'==' -> equal to
+'>=' -> greater than equal to
+'<=' -> less than equal to
+'!=' -> not equal to
+
+1. If Else condition -> we can use if else condition to change the flow of the code
+    if height > 120:
+    print('ride rollercoaster')
+    else:
+    print('Sorry, you have to be taller than 120 to ride the rollercoaster')
+
+2. Nested If Else condition -> we can use nested if else and elif to check for further conditions
+    if height > 120:
+        if age >= 20:
+            print('Pay $20')
+        elif age < 13:
+            print('Pay $15')
+        else:
+            print('Pay $18')
+    else:
+        print('You cannot rider the ')
