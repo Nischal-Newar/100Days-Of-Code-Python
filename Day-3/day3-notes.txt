@@ -8,13 +8,13 @@ comparison operations
 '<=' -> less than equal to
 '!=' -> not equal to
 
-1. If Else condition -> we can use if else condition to change the flow of the code
+1. If Else condition: we can use if else condition to change the flow of the code
     if height > 120:
     print('ride rollercoaster')
     else:
     print('Sorry, you have to be taller than 120 to ride the rollercoaster')
 
-2. Nested If Else condition -> we can use nested if else and elif to check for further conditions
+2. Nested If Else condition: we can use nested if else and elif to check for further conditions
     if height > 120:
         if age >= 20:
             print('Pay $20')
@@ -24,3 +24,11 @@ comparison operations
             print('Pay $18')
     else:
         print('You cannot rider the ')
+
+3. Muliple If statement succession: we can use multiple If statement if required
+
+4. Logical operators: we can use multiple condition in single conditional statement using 'and', 'or' and 'not'
+    
+    'and' -> true only if all the conditions seperated by 'and' is true
+    'or' -> true if any of the conditions seperated by 'or' is true
+    'not' -> will make true false and vice versa
