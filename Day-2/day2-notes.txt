@@ -1,4 +1,4 @@
-#### Data Types ####
+#### Day-02 Notes ####
 
 # String
 to define a string in python we will have to use double quotes or single quotes.

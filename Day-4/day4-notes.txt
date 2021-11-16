@@ -1,0 +1,11 @@
+#### Day-04 Notes ####
+
+1. Random numbers: random module can be used to generate random values
+    There are multiple functions we can use from random module. For example - 
+        -> random.randint(1, 10) : it will generate a random number between 1 and 10
+
+2. Lists: we can store multiple values in a single variable using the list. This is part of the Data Structures.
+    Format: fruits = ["Cherry", "Apple", "Pear"]
+    if we go from left to right the index will be count as -> 0, 1, 2 and so on
+    if we go from right to left the index will be count as -> -1, -2, -3 and so on
+
