@@ -10,4 +10,9 @@ names = []
 for i in range(choice):
     names.append(input('Provide the name: '))
 
-print(f'{random.choice(names)} will pay the bill.')
+# without using choice function
+random_index = random.randint(0, choice-1)
+print(f'According to random index function: {names[random_index]} will pay the bill.')
+
+# with using choice function
+print(f'According to choice function: {random.choice(names)} will pay the bill.')
