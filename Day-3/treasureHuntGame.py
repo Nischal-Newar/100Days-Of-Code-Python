@@ -22,23 +22,23 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 
 print('Welcome to Treasure Hunt Game!')
-print('You are reached an Island using your treasure map. Now you will have to make bunch of choices to reach the treasure!')
-print('Be cautious though. If you make any wrong turn, you will die!')
+print('You reached a jungle using your treasure map. Now you will have to make bunch of choices to reach the treasure!')
+print('Be cautious though. If you make any wrong turn, you will die!', '\n')
 
 # Story
 status = 'alive'
-print('You are at the beach of the Island. You see two paths from there. One towards left and another towards right')
+print('You are at the start of a jungle. You see two paths from there. One towards left and another towards right')
 choice = input('choose left or right: ')
 if choice == 'left':
     print('''
         It seems you have now reached a calm river. You see a temple on the other side of the river. 
-        It seems you have three options - swim, go up towards the mountain or go down?
+        You have three options - swim, go up towards the mountain or go down?\n
     ''')
-    choice = input('Choose swim or up or down')
+    choice = input('Choose swim or up or down ')
     if choice == 'up':
         print('''
             After climbing at a certain height, you see no path going up any further. However there is a bridge. 
-            Now you have two options - cross through the bridge or go down?
+            Now you have two options - cross through the bridge or go down?\n
         ''')
         choice = input('Choose bridge or down')
         if choice == 'bridge':
@@ -55,7 +55,7 @@ if choice == 'left':
         ''')
         print('''
             Now, you are on the other side of the river. You go towards the temple. However, you found the straight path is blocked by rocks.
-            You have two options: try to remove the rocks or go right        
+            You have two options: try to remove the rocks or go right\n     
         ''')
         choice = input('Choose rocks or right')
         if choice == 'rocks':
@@ -64,6 +64,43 @@ if choice == 'left':
                 With the help of the shovel you remove the rocks.
                 The path is clear and you successfully reached the temple.
             ''')
+            print('''
+                Once you reached the temple, there were two options available for you. Either you could go up the stairs or go down the stairs.
+            ''')
+            choice = input('Choose up or down')
+            if choice == 'up':
+                print('''
+                    As soon as you start going up the stairs, you hear some kind of sound. In a distance you see few statues came out of a door. They were holding bows.
+                    The moment you try to move from the stairs they start shooting you and killing you in the action.
+                ''')
+                status = 'dead'
+            else:
+                print('''
+                    You went down the stairs and found three rooms infront of you. One leading to right, one leading to left and one going straight.
+                ''')
+                choice = ('Choose left, right or straight')
+                if choice == 'left':
+                    print('''
+                        You went through the left door. The door closed behind you. The room is dark. You used your torch light you found earlier.
+                        As soon as you turn on the torch, you see that you are surrounded by poisonous spider.
+                        You die a slow and painfully.
+                    ''')
+                    status = 'dead'
+                elif choice == 'straight':
+                    print('''
+                        You went straight through the door. The door closed behind you. The room is dark. You used your torch light you found earlier.
+                        As soon as you turn on the torch, you see walls closing in slowly. You try to run fast through the path. However, the path end abruptly.
+                        You die painfully.
+                    ''')
+                    status = 'dead'
+                else:
+                    print('''
+                        You went through the right door. The door closed behind you. The room is dark. You used your torch light you found earlier.
+                        As soon as you turn on the torch, you see there is a path going straight. You walk the path for few minutes.
+                        It leds you to a room. Inside that room you found the treasure.
+                        Congratulations!!! YOU WON!!!
+                    ''')
+                    status = 'alive'
         else:
             print('''
                 You went on the right side. It led you to the deeper part of the jungle.
@@ -85,6 +122,7 @@ else:
     ''')
     status = 'dead'
 
+# end scene
 if status == 'dead':
     print('''
                             ,--.

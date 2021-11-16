@@ -1,4 +1,4 @@
-#### Control FLow and Logical Operators ####
+#### Day-03 Notes ####
 
 comparison operations
 '>' -> greater than
