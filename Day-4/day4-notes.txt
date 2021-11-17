@@ -9,3 +9,7 @@
     if we go from left to right the index will be count as -> 0, 1, 2 and so on
     if we go from right to left the index will be count as -> -1, -2, -3 and so on
 
+3. We can store lists inside list (Nested Lists).
+    For example: value = [name, surname], name = ['XYZ', 'ABC'], surname = ['CDE', 'FGH']
+    here value = [['XYZ', 'ABC'],['CDE', 'FGH']]
+
