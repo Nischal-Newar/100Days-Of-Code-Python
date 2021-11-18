@@ -1,0 +1,9 @@
+#### Day-05 Notes ####
+
+1. For loop: we can use For loop to loop through list and perform action as required.
+    For example: list = ['hello', 'bye', 'see']
+                 for x in list:
+                    print(x)
+
+                for x in range(0, 6) # this will loop from 0 to 6
+                    print(i)
