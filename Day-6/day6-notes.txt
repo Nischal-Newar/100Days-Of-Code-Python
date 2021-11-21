@@ -1,0 +1,16 @@
+#### Day-06 Notes ####
+
+1. Functions: piece of code we can call anywhere to perform a specific task.
+    declaration: def functionname():
+                Do something inside.
+    calling: functionname()
+
+2. Indentation: indentation means the code which is inside a function. for example in the folder structure we see in windows or mac we see
+                file is inside another folder. In python, indentation is important because we do not use '{}' to distinguish codes inside
+                a function and outside a function.
+
+3. Code Blocks
+
+3. While Loop: It works in similar way to For loop. It will run a piece of code till the condition is True.
+    declaration: while something_is_true:
+                        #Do something

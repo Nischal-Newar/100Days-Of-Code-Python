@@ -1,0 +1,19 @@
+#### code to move the robot through the hurdleloop challenge ####
+#### The challenge is in the Reeborg's World ####
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def path():
+    move()
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+
+for step in range(6):
+    path()
