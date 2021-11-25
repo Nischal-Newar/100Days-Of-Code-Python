@@ -1,0 +1,26 @@
+#### Day-08 Notes ####
+
+1. Function with inputs: we can pass the values to a function by passing paramters
+    parameters - name of the variable we passing to the function
+    argument - the value of the parameters
+
+    for example:
+    def something(value):
+        print(value)
+
+    something(2)
+    here, 2 is the argument and value is the parameter
+
+2. Positional Arguments: it is the default way of passing argument to the function i.e. the function will automatically assign the argument
+                         depending on the position of the values.
+
+                         for example, def test(a, b)
+                                      test(1,2) -> a=1, b=2
+                                      test(2,1) => a=2, b=1
+
+3. Keyword Arguments: in this type of argument passing, we explicitly pass the argument along with the parameters. This way the function know
+                      which argument is assigned to which parameter.
+                      for example: def test(a,b):
+                                        print(a, b)
+                                    test(a=1, b=2) -> a=1, b=2
+                                    test(b=2, a=1) -> a=1, b=2
