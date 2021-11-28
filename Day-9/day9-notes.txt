@@ -1,0 +1,35 @@
+#### Day-09 Notes ####
+
+1. Dictionary: it is like JSON that stores the record in the format of key-value pair.
+    -> for example: programming_dictionary = {
+            "Bug": "An error in a program that prevents the program from running as expected."
+            "Loop": "the action of doing something over and over again"
+        }
+        here, programming_dictionary is a dictionary
+
+    -> To retrieve the "Loop" value we use the syntax: programming_dictionary["Loop"]
+
+    -> We can add records to dictionary by using the below syntax:
+            programming_dictionary["Function"] = "A piece of code that you can easily call over and over again." 
+    
+    -> We can overwrite the value for any key using hte below syntax:
+            programming_dictionary["Bug"] = "A moth in your computer"
+    
+    -> Looping through the dictionary:
+        for key in programming_dictionary:
+            print(programming_dictionary[key])
+
+2. Nesting dictionary in a dictionary:
+    for example: travel_log = {
+        "France": {
+            "cities_visited": ["Paris", "Dijon"]
+        }
+    }
+
+3. Nesting dictionary in  a list:
+    for example: travel_log = [
+        {
+            "country": "France",
+            "cities_visited": ["Paris", "Dijon"]
+        }
+    ]
