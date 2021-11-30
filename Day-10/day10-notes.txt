@@ -5,3 +5,6 @@
                     formatted_name = f_name.titel() + ' ' + l_name.title()
 
 2. Multiple return values: we can use multiple 'return' using If Else condition
+
+3. Docstring: """ """, We can write multiple lines without any error. We use it to document our functions. We can use it as comment as well.
+              However, it confuses many programmer as it can be used for storing long string values as well.
