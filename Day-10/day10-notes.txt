@@ -1,0 +1,7 @@
+#### Day-10 Notes ####
+
+1. Functions with output: we can use 'return' keyword to return a value from the function
+    for example: def name(f_name, l_name):
+                    formatted_name = f_name.titel() + ' ' + l_name.title()
+
+2. Multiple return values: we can use multiple 'return' using If Else condition
