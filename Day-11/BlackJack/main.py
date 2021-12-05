@@ -14,26 +14,29 @@ while user_preferences:
     player.append(random.choice(cards))
     dealer.append(random.choice(cards))
     dealer.append(random.choice(cards))
+    if sum(player) == 21:
+        print('Player wins')
+        break
+    if sum(dealer) == 21:
+        print('Dealer wins')
+        break
+
     while game_condition:
-        print(f'Player Deck: {player}')
-        print(f'Dealer Deck: {dealer}')
-        if sum(player) == 21:
-            print('You win!')
-        elif sum(dealer) == 21:
-            print('Dealer win')    
+        print(f'Player cards: {player}')
+        print(f'Dealer cards: {dealer}')
         if sum(player) < 21:
-            user_choice = input('Select an option: Hit or Stand?').lower()
-            if user_choice == 'hit':
+            user_input = input('Please select Hit or Stand: ').lower()
+            if user_input == 'hit':
                 player.append(random.choice(cards))
-            elif sum(player) == sum(dealer):
-                print('Draw game!')
-            elif sum(player) > sum(dealer):
-                print('You win!')
-            elif sum(dealer) > sum(player):
-                print('Dealer win!')
+                dealer.append(random.choice(cards))
             else:
-                print('Bust')
-                
-        
-        game_condition = False
-        user_preferences = False
+                if sum(player) > sum(dealer):
+                    print('Player Wins')
+                    game_condition = False
+                else:
+                    print('Dealer Wins')
+                    game_condition = False
+        else:
+            print('Dealer wins')
+            game_condition = False
+    user_preferences = False
