@@ -1,0 +1,13 @@
+#### Day-12 Notes ####
+
+1. Scopes: there are two types of scopes - global and local.
+            Global Scope: it is accessible to everyone depending on where it has been defined
+            Local Scope: it will be accessible inside the function
+
+2. In python, there is no block scope, for example: if a variable is defined inside a if block it will still be consider as global variable
+
+3. According to the best practice, we do not modify the Global scope variable. however, if needed can be updated using below syntax:
+    enemies = 1
+    def testing():
+        global enemies # by using the global keyword we declared that the enemies is global and not local
+        enemies += 1
