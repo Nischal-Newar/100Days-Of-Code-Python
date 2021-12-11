@@ -1,0 +1,7 @@
+### Higher Lower Game ###
+
+1. The game will ask who has higher Instagram followers.
+2. The player will guess which has higher value.
+3. The player will have two options - A or B
+4. If the player wins, they will move on to the next question
+5. If the player loss, they will get the score
