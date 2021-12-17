@@ -1,3 +1,5 @@
 #### Day-16 Notes ####
 
-1. Object Oriented Programming: divide the program into subtasks
+1. Object-Oriented Programming:
+    - python also uses the concept of OOPs.
+    - We will be using the OOPS feature inside our codes
