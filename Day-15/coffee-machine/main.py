@@ -93,11 +93,19 @@ while True:
 
     if response["status"]:
         coffee_cost = machine_resources[response["coffee"]+"_cost"]
+        user_coffee_cost = 0.0
         print(f'Please pay {coffee_cost} for your coffee.')
-        user_coffee_cost = float(input('Pay: '))
-        if coffee_cost < user_coffee_cost:
-            print(f'')
-        print(f'Hello, here is your {response["coffee"]}. Please enjoy!')
+        while user_coffee_cost != coffee_cost:
+            user_coffee_cost = float(input('Pay: '))
+            if coffee_cost < user_coffee_cost:
+                print(f'Here is your change {user_coffee_cost - coffee_cost}')
+                machine_resources["current_money"] += user_coffee_cost - coffee_cost
+                print(f'Hello, here is your {response["coffee"]}. Please enjoy!')
+            elif coffee_cost > user_coffee_cost:
+                coffee_cost -= user_coffee_cost
+                print(f'Please pay the remaining {coffee_cost} amount.')
+            else:
+                print(f'Hello, here is your {response["coffee"]}. Please enjoy!')
+                machine_resources["current_money"] += user_coffee_cost
     else:
         print(f'Hello, we do not have sufficient resources for {response["coffee"]}')
-
