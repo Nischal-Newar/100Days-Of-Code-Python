@@ -1,0 +1,17 @@
+#### Day-17 Notes ####
+
+1. Create Custom Classes: we can create our own custom class using the keyword 'class'.
+        Syntax: class className:
+                    code...
+2. We can use 'pass' keyword to bypass the function or class without defining anything inside it
+
+3. We can use three different type of case for naming convention: PascalCase, camelCase and snake_case.
+        In python, we usually use PascalCase for class name and snake_case for the rest. We rarely see camelCase for naming convention.
+
+4. To declare the constructor inside the class, we use the function '__init__'.
+    syntax:    def __init__(self, id, username):
+                    self.id = id
+                    self.username = username
+    here, id and username are attributes
+
+5. Everytime an object is created, the constructor (__init__) is called.
