@@ -1,0 +1,9 @@
+#### Day-18 Notes ####
+
+Today we will be working with the turtle module to create graphics in python.
+
+1. Create a square
+2. We can use aliases for imported modules.
+    syntax: import turtle as lucy
+3. Draw a dashed line
+4. Drawing a triangle, square, pentagon, hexagon, heptagon, octagon, nonagon and decagon with side 100 in length
