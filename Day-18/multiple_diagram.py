@@ -8,7 +8,7 @@ screen.bgcolor("black")
 lucy.shape("turtle")
 
 # different colors
-diagram_color = ["#78ABC5", "#9AF6ED", "#EBCCA6", "#D24D4D", "#51767F", "#A7F6F6", "#75C3CF", "#579D9D"]
+diagram_colors = ["#78ABC5", "#9AF6ED", "#EBCCA6", "#D24D4D", "#51767F", "#A7F6F6", "#75C3CF", "#579D9D"]
 diagram_color_length = 0
 
 
@@ -23,7 +23,7 @@ def draw_shape(number_of_sides, color):
 
 # loop to call the shape function and pass the number of sides and color
 for shape_sides in range(3, 11):
-    draw_shape(shape_sides, diagram_color[diagram_color_length])
+    draw_shape(shape_sides, diagram_colors[diagram_color_length])
     diagram_color_length += 1
 
 screen.exitonclick()
