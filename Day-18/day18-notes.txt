@@ -7,3 +7,10 @@ Today we will be working with the turtle module to create graphics in python.
     syntax: import turtle as lucy
 3. Draw a dashed line
 4. Drawing a triangle, square, pentagon, hexagon, heptagon, octagon, nonagon and decagon with side 100 in length
+5. Generate a Random Walk
+6. Draw a Spirograph
+
+
+Note:
+    Tuple: it is a data type in python which is similar to list. However, tuples are immutable. We use tuple when we
+    want to stop something from changing, for example website colors
