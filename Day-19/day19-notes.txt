@@ -1,0 +1,7 @@
+#### Day-19 Notes ####
+
+1. Event Listeners: we can listen to events such as mouse click, keystroke to perform certain tasks.
+2. Higher order function: A function is called Higher Order Function if it contains other functions
+                          as a parameter or returns a function as an output.
+3. Multiple objects: we can create multiple objects for a single class and can have different states.
+                     for example, using turtle module, we create two different objects and assign different colors.
