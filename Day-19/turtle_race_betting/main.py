@@ -2,7 +2,6 @@
 from turtle import Screen, Turtle
 import random
 
-
 # setup screen and betting input
 screen = Screen()
 screen.setup(width=900, height=800)
