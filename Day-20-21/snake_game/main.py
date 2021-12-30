@@ -14,6 +14,14 @@ screen.bgcolor("black")
 snake = SnakeBody()
 screen.update()
 
+# listen to keystroke
+screen.listen()
+screen.onkeypress(snake.move_up, "Up")
+screen.onkeypress(snake.move_down, "Down")
+screen.onkeypress(snake.move_left, "Left")
+screen.onkeypress(snake.move_right, "Right")
+
+
 # snake movement
 is_game_on = True
 while is_game_on:
