@@ -10,6 +10,7 @@ class SnakeBody:
     def __init__(self):
         self.segments = []
         self.create_snake()
+        self.head = self.segments[0]
 
     def create_snake(self):
         for _ in range(3):
@@ -25,3 +26,18 @@ class SnakeBody:
             self.segments[segment].setposition(new_x_cords, new_y_cords)
         self.segments[0].forward(FORWARD_MOVEMENT_SPEED)
 
+    def move_up(self):
+        if self.head.heading() != 270:
+            self.head.setheading(90)
+
+    def move_down(self):
+        if self.head.heading() != 90:
+            self.head.setheading(270)
+
+    def move_left(self):
+        if self.head.heading() != 0:
+            self.head.setheading(180)
+
+    def move_right(self):
+        if self.head.heading() != 180:
+            self.head.setheading(0)
