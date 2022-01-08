@@ -5,10 +5,10 @@ import random
 class Food(Turtle):
     def __init__(self):
         super().__init__()
-        self.shape("circle")
+        self.shape("turtle")
         self.penup()
-        self.shapesize(stretch_len=0.5, stretch_wid=0.5)
-        self.color("blue")
+        self.shapesize(stretch_len=0.9, stretch_wid=0.9)
+        self.color("#005B9A")
         self.speed("fastest")
         self.change_location()
 
