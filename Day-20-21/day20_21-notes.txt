@@ -22,3 +22,5 @@
             def breathe():        // this will modify the function breathe
                 super.breathe()
                 print("underwater")
+
+2. Slicing Lists & Tuple: we can use slicing technique to get the desired element from list or tuples without looping inside them.
