@@ -5,7 +5,7 @@ from snake import SnakeBody
 from food import Food
 from score import Score
 
-# setup screen and betting input
+# setup screen
 screen = Screen()
 screen.setup(width=900, height=900)
 screen.colormode(255)
