@@ -1,0 +1,11 @@
+Create a Ping Pong Game:
+
+1. Create a screen using turtle module
+2. Create a paddle and add movement
+3. Create a paddle class and add two paddles - left and right
+4. Create a ball and add the ball movement
+5. Configure the ball and wall collision detection
+6. Configure the ball and paddle collision detection
+7. Configure scorecard
+8. Configure score when the paddle misses the ball
+9. Increase the speed of ball with each collision with paddle
