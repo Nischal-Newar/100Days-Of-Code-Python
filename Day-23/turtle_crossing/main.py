@@ -1,3 +1,4 @@
+import time
 from turtle import Screen
 from create_turtle import CreateTurtle
 from create_blocks import CreateBlock
@@ -13,6 +14,7 @@ screen.title("Turtle Crossing Game")
 
 # create the turtle
 lucy = CreateTurtle()
+randomBlocks = CreateBlock()
 
 # listen to keystroke
 screen.listen()
@@ -20,11 +22,14 @@ screen.onkeypress(lucy.turtle_move_forward, 'Up')
 screen.onkeypress(lucy.turtle_move_backward, 'Down')
 
 # game loop
-for rando in range(1, random.randint(1, 10)):
-    rando = CreateBlock()
 is_game_on = True
 while is_game_on:
+    time.sleep(0.1)
     screen.update()
+
+    randomBlocks.car()
+    randomBlocks.car_move()
+
 
 # close the screen on click
 screen.exitonclick()

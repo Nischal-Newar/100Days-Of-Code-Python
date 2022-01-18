@@ -2,5 +2,7 @@ Create a Turtle Crossing Game:
 
 1. Create a screen
 2. Create a turtle and move it using up and down key
-3. Create blocks (car) moving left to right
-4. Generate the blocks randomly and move it with random speed.
+3. Generate the blocks randomly and move it with random speed (left to right).
+4. Detect collision with block (car)
+5. Detect when turtle reaches the end
+6. Create a scoreboard
