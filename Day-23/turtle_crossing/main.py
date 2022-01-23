@@ -1,8 +1,8 @@
+# import packages
 import time
 from turtle import Screen
 from create_turtle import CreateTurtle
 from create_blocks import CreateBlock
-import random
 
 # setup screen
 screen = Screen()
@@ -14,7 +14,8 @@ screen.title("Turtle Crossing Game")
 
 # create the turtle
 lucy = CreateTurtle()
-randomBlocks = CreateBlock()
+first_car_lane = CreateBlock()
+second_car_lane = CreateBlock()
 
 # listen to keystroke
 screen.listen()
@@ -27,9 +28,19 @@ while is_game_on:
     time.sleep(0.1)
     screen.update()
 
-    randomBlocks.car()
-    randomBlocks.car_move()
+    # generate car and move it backwards
+    first_car_lane.car(580, 20, 321)
+    second_car_lane.car(-580, -321, -20)
+    first_car_lane.car_move('backward')
+    second_car_lane.car_move('forward')
 
+    for car in first_car_lane.all_blocks:
+        if car.distance(lucy) < 30:
+            is_game_on = False
+
+    for car in second_car_lane.all_blocks:
+        if car.distance(lucy) < 30:
+            is_game_on = False
 
 # close the screen on click
 screen.exitonclick()

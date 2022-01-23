@@ -10,17 +10,21 @@ class CreateBlock:
     def __init__(self):
         self.all_blocks = []
 
-    def car(self):
+    def car(self, location_x, location_y1, location_y2):
         random_car_spawn = random.randint(1, 6)
         if random_car_spawn == 1:
             car = Turtle('square')
             car.color(random.choice(CAR_COLOR_SCHEME))
             car.penup()
             car.shapesize(stretch_wid=1, stretch_len=2)
-            yaxis = random.randint(-300, 300)
-            car.goto(580, yaxis)
+            yaxis = random.randint(location_y1, location_y2)
+            car.goto(location_x, yaxis)
             self.all_blocks.append(car)
 
-    def car_move(self):
-        for car in self.all_blocks:
-            car.backward(STARTING_MOVE_DISTANCE)
+    def car_move(self, direction):
+        if direction == 'backward':
+            for car in self.all_blocks:
+                car.backward(STARTING_MOVE_DISTANCE)
+        else:
+            for car in self.all_blocks:
+                car.forward(STARTING_MOVE_DISTANCE)
